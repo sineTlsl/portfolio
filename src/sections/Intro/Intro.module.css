@@ -1,0 +1,11 @@
+.contentTextWrap {
+  height: 100%;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentTextWrap p {
+  line-height: 6rem;
+}
