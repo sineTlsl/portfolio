@@ -1,0 +1,50 @@
+.hidden {
+  display: none;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 2;
+  display: inline-block;
+  color: #757575;
+  transition: opacity 0.3s;
+  font-size: 16px;
+}
+.scroll span {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+  bottom: 5px;
+  height: 40px;
+  top: -50px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 4px;
+}
+.scroll span::before {
+  animation: pill 2.5s linear infinite;
+  background-image: linear-gradient(to top, #fff 30%, #bebebe 70%);
+  border-radius: 1px;
+  content: '';
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@keyframes pill {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: 50px;
+  }
+}
