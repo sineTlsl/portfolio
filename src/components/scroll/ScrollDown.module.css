@@ -11,7 +11,7 @@
   display: inline-block;
   color: #757575;
   transition: opacity 0.3s;
-  font-size: 16px;
+  font-size: 22px;
 }
 .scroll span {
   background: rgba(255, 255, 255, 0.3);
@@ -23,7 +23,7 @@
   overflow: hidden;
   position: absolute;
   transform: translateX(-50%);
-  width: 4px;
+  width: 2px;
 }
 .scroll span::before {
   animation: pill 2.5s linear infinite;
@@ -34,7 +34,7 @@
   height: 50px;
   left: 0;
   position: absolute;
-  width: 1px;
+  width: 2px;
 }
 
 @keyframes pill {
