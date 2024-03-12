@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Sans_KR } from 'next/font/google';
 
 import '../styles/reset.css';
 
-// components
 import Header from '@/sections/header';
 
-const inter = Inter({ subsets: ['latin'] });
+const notoKr = Noto_Sans_KR({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: '임시은 포트폴리오',
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body className={inter.className}>
+      <body className={notoKr.className}>
         <Header />
         <main>{children}</main>
       </body>
