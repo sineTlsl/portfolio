@@ -1,69 +1,25 @@
-.myHeaderWrap {
+.my-header {
   width: 100%;
   position: fixed;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 100;
   padding: 30px 60px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
 }
-.myHeaderWrap:active {
+.my-header.active {
   transform: translateY(-100%);
 }
 
-.commText {
+.link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   font-weight: 600;
   font-size: 20px;
 }
-.commText span {
+.link span {
   margin-right: 8px;
-}
-
-.menuTabList {
-  display: flex;
-  justify-content: space-between;
-}
-.menuTabList .menuItem {
-  margin-left: 30px;
-}
-.menuTabList .menuItem a {
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 12pt;
-  font-weight: 400;
-  position: relative;
-  display: block;
-}
-.menuTabList .menuItem a:before {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  color: transparent;
-  content: '•';
-  text-shadow: 0 0 transparent;
-  font-size: 10pt;
-  -webkit-transition: text-shadow 0.3s, color 0.3s;
-  -moz-transition: text-shadow 0.3s, color 0.3s;
-  transition: text-shadow 0.3s, color 0.3s;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-.menuTabList .menuItem a:hover:before,
-.menuTabList .menuItem a:focus:before {
-  color: #fff;
-  text-shadow: 10px 0 #fff, -10px 0 #fff;
-}
-.menuTabList .menuItem a:hover,
-.menuTabList .menuItem a:focus {
-  color: #fff;
 }

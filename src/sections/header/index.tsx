@@ -1,26 +1,14 @@
 'use client';
 
 import { Inter } from 'next/font/google';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './header.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
+import ScrollYProgressBar from '@/components/scroll/ScrollYProgressBar';
+import MenuList from './MenuList';
+import LogoText from './LogoText';
 
-const menuTabs = [
-  {
-    href: '/about',
-    title: 'About',
-  },
-  {
-    href: '/project',
-    title: 'Project',
-  },
-  {
-    href: '/study',
-    title: 'Study',
-  },
-];
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Header() {
   const [prevScrollTop, setPrevScrollTop] = useState<number>(0);
@@ -43,27 +31,16 @@ export default function Header() {
   }, [prevScrollTop]);
 
   return (
-    <header
-      className={`${styles.myHeaderWrap} ${inter.className} ${
-        isHeaderActive ? `${styles.active}` : ''
-      }`}
-    >
-      <div>
-        <Link className={styles.commText} href='/'>
-          <span>{`Sieun's`}</span>Portfolio
-        </Link>
+    <header>
+      <ScrollYProgressBar />
+      <div
+        className={`${styles['my-header']} ${inter.className} ${
+          isHeaderActive ? `${styles.active}` : ''
+        }`}
+      >
+        <LogoText />
+        <MenuList />
       </div>
-      <nav>
-        <ul className={styles.menuTabList}>
-          {menuTabs.map(({ href, title }) => (
-            <li key={title} className={styles.menuItem}>
-              <Link className={styles.commText} href={href} aria-label={title}>
-                {title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </header>
   );
 }

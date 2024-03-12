@@ -1,0 +1,49 @@
+.item {
+  margin-left: 30px;
+}
+.item a {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  display: block;
+}
+.item a:before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: transparent;
+  content: '•';
+  text-shadow: 0 0 transparent;
+  font-size: 12px;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.item a:hover:before,
+.item a:focus:before {
+  color: #000;
+  text-shadow: 10px 0 #000, -10px 0 #000;
+}
+.item a:hover,
+.item a:focus {
+  color: #000;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+}
+.link span {
+  margin-right: 8px;
+}
