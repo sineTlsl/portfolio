@@ -1,21 +1,12 @@
-import { ReactNode } from 'react';
 import Link from 'next/link';
-import IconBtn from './IconBtn';
 import { Tooltip } from '@mui/material';
 import { ConnectIcon } from '@/types/icon';
 
-type Props = {
-  ConnectIcon;
+type Props = ConnectIcon & {
   onClick: () => void;
 };
 
-export default function ToolTipIconBtn({
-  name,
-  icon,
-  href,
-  copyText,
-  onClick,
-}: Props) {
+export default function ToolTipIconBtn({ name, icon, href, onClick }: Props) {
   return (
     <Tooltip title={name}>
       <button onClick={onClick} aria-label={`${name} 링크`}>
