@@ -1,41 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ConnectIcon } from '@/types/icon';
-import Snackbar from '@mui/material/Snackbar';
-
 import ToolTipIconBtn from '@/components/button/ToolTipIconBtn';
-import GithubFillIcon from '@/components/ui/icons/GithubFillIcon';
-import BlogFillIcon from '@/components/ui/icons/BlogFillIcon';
-import CallFillIcon from '@/components/ui/icons/CallFillIcon';
-import EmailFillIcon from '@/components/ui/icons/EmailFillIcon';
-
-export const BLOGICONS: Icon[] = [
-  {
-    nameKr: '깃허브',
-    name: 'Github',
-    icon: <GithubFillIcon />,
-    href: 'https://sinetlsl.github.io',
-  },
-  {
-    nameKr: '기술 블로그',
-    name: 'TechBlog',
-    icon: <BlogFillIcon />,
-    href: 'https://github.com/sineTlsl',
-  },
-  {
-    nameKr: '전화번호',
-    name: 'Call',
-    icon: <CallFillIcon />,
-    copyText: '010-9929-1927',
-  },
-  {
-    nameKr: '이메일',
-    name: 'Email',
-    icon: <EmailFillIcon />,
-    copyText: 'limsieun0313@gmail.com',
-  },
-];
+import Snackbar from '@mui/material/Snackbar';
+import { connectIcon } from './ConnectIcon';
 
 type Success = {
   open: boolean;
@@ -47,10 +15,6 @@ export default function Connect() {
     open: false,
     message: '',
   });
-
-  const handleToLink = (href: string) => {
-    window.open(href);
-  };
 
   const handleCopyClipboard = async (text: string, nameKr: string) => {
     try {
@@ -69,15 +33,16 @@ export default function Connect() {
 
   return (
     <div style={{ display: 'flex', gap: '1rem' }}>
-      {BLOGICONS.map(({ nameKr, icon, name, href, copyText }) => (
+      {connectIcon.map(({ nameKr, icon, name, href, copyText }) => (
         <ToolTipIconBtn
           key={name}
+          nameKr={nameKr}
           name={name}
           icon={icon}
           href={href}
-          onClick={
-            copyText ? () => handleCopyClipboard(copyText, nameKr) : undefined
-          }
+          onClick={() => {
+            copyText && handleCopyClipboard(copyText, nameKr);
+          }}
         />
       ))}
       <Snackbar
