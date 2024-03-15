@@ -4,7 +4,7 @@ type Props = {
   height?: string;
   flexDirection?: flexDirection;
   background: string;
-  gap: string;
+  gap?: string;
   children?: React.ReactNode;
 };
 
