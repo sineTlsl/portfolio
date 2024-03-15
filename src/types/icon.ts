@@ -1,7 +1,9 @@
+import { ReactNode } from 'react';
+
 export type ConnectIcon = {
   nameKr: string;
   name: string;
-  icon: React.ReactNode;
+  icon?: ReactNode;
   href?: string;
   copyText?: string;
 };
