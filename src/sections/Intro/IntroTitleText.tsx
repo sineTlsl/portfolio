@@ -1,9 +1,8 @@
 'use client';
 
 import { TITLETEXT } from '@/data/intro';
-import styles from './IntroTitleText.module.css';
+import styles from './css/IntroTitleText.module.css';
 import { Playfair_Display } from 'next/font/google';
-import Image from 'next/image';
 
 const playFiar = Playfair_Display({
   weight: '600',
@@ -26,13 +25,6 @@ export default function IntroTitleText() {
           {s}
         </span>
       ))}
-      <Image
-        className={styles.rainbow}
-        src='/assets/images/rainbow.png'
-        width={125}
-        height={120}
-        alt='무지개'
-      />
     </div>
   );
 }

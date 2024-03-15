@@ -25,16 +25,4 @@
   }
 }
 
-.rainbow {
-  display: inline-block;
-  animation: motion 1s linear 0s infinite alternate;
-}
 
-@keyframes motion {
-  0% {
-    transform: rotate(-10deg); /* 왼쪽으로 20도 기울임 */
-  }
-  100% {
-    transform: rotate(10deg); /* 오른쪽으로 20도 기울임 */
-  }
-}

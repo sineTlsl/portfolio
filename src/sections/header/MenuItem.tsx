@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './MenuItem.module.css';
+import styles from './css/MenuItem.module.css';
 
 type MenuItemProps = {
   href: string;

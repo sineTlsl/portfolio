@@ -1,21 +1,11 @@
-import IntroSubText from '../Intro/IntroSubText';
+import LayoutContainer from '@/components/LayoutContainer';
 import Connect from './Connect';
 import Profile from './Profile';
 import AboutContent from './AboutContent';
 
 export default function About() {
   return (
-    <section
-      style={{
-        width: '100%',
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: '2rem',
-      }}
-    >
+    <LayoutContainer gap="2rem" background="#fff">
       <div
         style={{
           display: 'flex',
@@ -34,6 +24,6 @@ export default function About() {
         </div>
       </div>
       <AboutContent />
-    </section>
+    </LayoutContainer>
   );
 }

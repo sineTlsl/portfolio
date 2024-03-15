@@ -2,7 +2,7 @@
 
 import { Inter } from 'next/font/google';
 import { useEffect, useState } from 'react';
-import styles from './header.module.css';
+import styles from './css/header.module.css';
 
 import ScrollYProgressBar from '@/components/scroll/ScrollYProgressBar';
 import MenuList from './MenuList';

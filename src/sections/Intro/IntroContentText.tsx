@@ -1,6 +1,7 @@
 'use client';
 
 import IntroTitleText from './IntroTitleText';
+import RainbowImage from './RainbowImage';
 
 export default function IntroContentText() {
   return (
@@ -11,6 +12,7 @@ export default function IntroContentText() {
       }}
     >
       <IntroTitleText />
+      <RainbowImage />
     </div>
   );
 }

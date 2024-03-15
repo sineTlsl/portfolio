@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import styles from './Profile.module.css';
 
 export default function Profile() {
   return (
@@ -13,10 +12,10 @@ export default function Profile() {
         }}
       >
         <Image
-          src='/assets/images/profile.jpeg'
+          src="/assets/images/profile.jpeg"
           width={230}
           height={230}
-          alt='profile'
+          alt="profile"
           priority
         />
       </div>
