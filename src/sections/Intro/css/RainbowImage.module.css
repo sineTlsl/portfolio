@@ -1,5 +1,7 @@
 .rainbow-wrap {
-  padding-bottom: 7rem;
+  padding-bottom: 13rem;
+  position: absolute;
+  left: 17rem;
 }
 
 .rainbow-wrap .rainbow {

@@ -6,11 +6,11 @@ export default function RainbowImage() {
     <div className={styles['rainbow-wrap']}>
       <Image
         className={styles.rainbow}
-        src='/assets/images/rainbow.png'
-        width={125}
-        height={100}
-        alt='무지개'
+        src="/assets/images/rainbow.png"
+        width={150}
+        height={110}
+        alt="무지개"
       />
     </div>
-  )
+  );
 }

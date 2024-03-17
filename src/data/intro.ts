@@ -1,4 +1,8 @@
-export const TITLETEXT: string = "Hello. I'm Sieun.";
+export const TITLETEXT: string[] = [
+  '안녕하세요!',
+  '프론트엔드 신입 개발자',
+  '임시은',
+];
 
 export const SUBTEXTS: string[] = [
   '게을러지지 않기 위해 기술 스터디 및 블로그를 작성하고 있습니다.',
