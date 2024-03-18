@@ -1,6 +1,8 @@
-type flexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse';
+import FadeInAnimation from './scroll/FadeInAnimation';
 
+type flexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse';
 type Props = {
+  isFade?: boolean;
   height?: string;
   flexDirection?: flexDirection;
   background?: string;
@@ -10,6 +12,7 @@ type Props = {
 };
 
 export default function LayoutContainer({
+  isFade = true,
   height = '100%',
   flexDirection = 'column',
   background = '#fff',
@@ -17,7 +20,7 @@ export default function LayoutContainer({
   padding = '0rem',
   children,
 }: Props) {
-  return (
+  const content = (
     <section
       style={{
         width: '100%',
@@ -34,4 +37,5 @@ export default function LayoutContainer({
       {children}
     </section>
   );
+  return isFade ? <FadeInAnimation>{content}</FadeInAnimation> : content;
 }

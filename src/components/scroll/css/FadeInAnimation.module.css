@@ -1,0 +1,10 @@
+.fade-wrap {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1200ms ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+}

@@ -6,7 +6,7 @@ import IntroContentText from './IntroContentText';
 
 export default function Intro() {
   return (
-    <LayoutContainer background="#f2f2f2" height="100vh">
+    <LayoutContainer isFade={false} background="#eaeaea" height="100vh">
       <IntroContentText />
       <ScrollDown />
     </LayoutContainer>

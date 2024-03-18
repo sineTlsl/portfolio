@@ -8,7 +8,7 @@ export default function Project() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        background: '#f2f2f2',
+        background: '#f8f8f8',
       }}
     ></section>
   );

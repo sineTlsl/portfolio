@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './ScrollDown.module.css';
+import styles from './css/ScrollDown.module.css';
 import { Annie_Use_Your_Telescope } from 'next/font/google';
 import { useEffect, useState } from 'react';
 
