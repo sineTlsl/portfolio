@@ -15,9 +15,12 @@ export default function Profile() {
     >
       <Image
         src="/assets/images/profile.jpeg"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{
+          objectFit: 'cover',
+        }}
         alt="profile"
+        sizes="100%"
         priority
       />
     </div>
