@@ -7,3 +7,8 @@ export type ConnectIcon = {
   href?: string;
   copyText?: string;
 };
+
+export type SkillIcon = {
+  name: string;
+  icon: string;
+};
