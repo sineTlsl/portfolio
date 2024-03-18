@@ -8,7 +8,7 @@
 .content-wrap .flex-row {
   display: flex;
   align-items: center;
-  gap: 8.5rem;
+  gap: 9rem;
 }
 
 .content-wrap .flex-row .about {

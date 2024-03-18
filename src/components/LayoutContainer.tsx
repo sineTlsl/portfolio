@@ -3,16 +3,18 @@ type flexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse';
 type Props = {
   height?: string;
   flexDirection?: flexDirection;
-  background: string;
+  background?: string;
   gap?: string;
+  padding?: string;
   children?: React.ReactNode;
 };
 
 export default function LayoutContainer({
-  height = '100vh',
+  height = '100%',
   flexDirection = 'column',
-  background,
+  background = '#fff',
   gap = '0rem',
+  padding = '0rem',
   children,
 }: Props) {
   return (
@@ -26,6 +28,7 @@ export default function LayoutContainer({
         alignItems: 'center',
         background: background,
         gap: gap,
+        padding: padding,
       }}
     >
       {children}
