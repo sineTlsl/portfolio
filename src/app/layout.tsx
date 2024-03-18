@@ -5,7 +5,10 @@ import '../styles/reset.css';
 
 import Header from '@/sections/header';
 
-const notoKr = Noto_Sans_KR({ subsets: ['latin'] });
+const notoKr = Noto_Sans_KR({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+});
 
 export const metadata: Metadata = {
   title: '임시은 포트폴리오',
@@ -18,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ko'>
+    <html lang="ko">
       <body className={notoKr.className}>
         <Header />
         <main>{children}</main>
