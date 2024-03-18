@@ -6,8 +6,8 @@ import styles from './css/SkillContent.module.css';
 export default function SkillContent() {
   return (
     <div className={styles.content}>
-      <h3 style={{ fontSize: '26px', fontWeight: '600' }}>Skill</h3>
-      <div className={styles['skill-text']}>
+      <h3 className={styles['skill-text']}>Skill</h3>
+      <div className={styles['skill-icons']}>
         {SKILLICON.map(({ name, icon }) => (
           <ToolTipIcon key={name} name={name}>
             <SkillIconBtn name={name} icon={icon} />

@@ -9,3 +9,9 @@
   font-size: 26px;
   font-weight: 600;
 }
+
+.skill-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
