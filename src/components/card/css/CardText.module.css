@@ -1,0 +1,25 @@
+.card-text {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.card-text > .flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card-text > .flex-space > .name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.card-text > .flex-space > .team {
+  font-size: 14px;
+  color: #a4a4a4;
+}
+.card-text > .desc {
+  line-height: 1.3rem;
+  font-weight: 400;
+  font-size: 15px;
+  color: #222;
+}
