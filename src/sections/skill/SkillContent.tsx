@@ -1,4 +1,4 @@
-import { SKILLICON } from '@/data/skill';
+import { SKILLICON } from '@/constants/skill';
 import ToolTipIcon from '@/components/icon/ToolTipIcon';
 import SkillIconBtn from '@/components/button/SkillIconBtn';
 import styles from './css/SkillContent.module.css';

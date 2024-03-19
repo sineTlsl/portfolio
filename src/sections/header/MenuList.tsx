@@ -1,4 +1,4 @@
-import { MENUS } from '@/data/menu';
+import { MENUS } from '@/constants/menu';
 import MenuItem from './MenuItem';
 
 export default function MenuList() {

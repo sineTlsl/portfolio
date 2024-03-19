@@ -1,6 +1,6 @@
 'use client';
 
-import { TITLETEXT } from '@/data/intro';
+import { TITLETEXT } from '@/constants/intro';
 import styles from './css/IntroTitleText.module.css';
 import { Hahmlet } from 'next/font/google';
 

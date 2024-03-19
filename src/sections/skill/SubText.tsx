@@ -1,5 +1,5 @@
 import React from 'react';
-import { SUBTEXTS } from '@/data/intro';
+import { SUBTEXTS } from '@/constants/intro';
 import styles from './css/SubText.module.css';
 
 const pointText = ['원활한 소통', '긍정적인 사고방식', '성공적인 결과'];

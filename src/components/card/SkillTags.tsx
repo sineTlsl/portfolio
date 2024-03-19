@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './css/SkillTags.module.css';
-import { TEACHSTACK } from '@/data/stack';
+import { TEACHSTACK } from '@/constants/stack';
 
 type Props = {
   skills: string[];
