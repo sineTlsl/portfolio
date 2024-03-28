@@ -1,19 +1,15 @@
-type Menu = {
-  href: string;
+export type Menu = {
   tab: string;
 };
 
 export const MENUS: Menu[] = [
   {
-    href: '/about',
-    tab: 'About',
+    tab: 'about',
   },
   {
-    href: '/projects',
-    tab: 'Project',
+    tab: 'project',
   },
   {
-    href: '/study',
-    tab: 'Study',
+    tab: 'study',
   },
 ];

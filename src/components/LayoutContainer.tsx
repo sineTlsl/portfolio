@@ -1,17 +1,20 @@
+import { ReactNode } from 'react';
 import FadeInAnimation from './scroll/FadeInAnimation';
 
 type flexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse';
 type Props = {
+  name?: string;
   isFade?: boolean;
   height?: string;
   flexDirection?: flexDirection;
   background?: string;
   gap?: string;
   padding?: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 };
 
 export default function LayoutContainer({
+  name,
   isFade = true,
   height = '100%',
   flexDirection = 'column',
@@ -37,5 +40,9 @@ export default function LayoutContainer({
       {children}
     </section>
   );
-  return isFade ? <FadeInAnimation>{content}</FadeInAnimation> : content;
+  return isFade ? (
+    <FadeInAnimation name={name}>{content}</FadeInAnimation>
+  ) : (
+    content
+  );
 }
