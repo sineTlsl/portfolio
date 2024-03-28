@@ -11,12 +11,7 @@ export default async function ProjectPage({ params: { slug } }: Props) {
   const project = await getFindProject(slug);
 
   return (
-    <article
-      style={{
-        margin: '130px 0',
-        padding: '0 20px',
-      }}
-    >
+    <article className="md-page">
       <Content project={project} />
     </article>
   );

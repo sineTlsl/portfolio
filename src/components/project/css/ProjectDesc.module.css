@@ -125,7 +125,9 @@
 .no-global-styles h3 {
   padding-top: 1rem;
 }
-
+.no-global-styles h3 {
+  line-height: 1.5rem;
+}
 .no-global-styles a {
   color: #000;
 }
