@@ -9,7 +9,7 @@ export const MENUS: Menu[] = [
     tab: 'About',
   },
   {
-    href: '/project',
+    href: '/projects',
     tab: 'Project',
   },
   {
