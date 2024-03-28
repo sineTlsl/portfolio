@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Ticat",
+    "image": "ticat-preview.gif",
+    "github": "https://github.com/Butlers-Team/ticat-client",
+    "figma": "https://www.figma.com/file/3DMIKyoZRmpZbWdfos640M/%E2%AD%90%EF%B8%8F-Team-project-%2F-TICAT---%EC%A7%80%EC%97%AD-%EC%B6%95%EC%A0%9C%EC%95%88%EB%82%B4-%EC%84%9C%EB%B9%84%EC%8A%A4?type=design&node-id=1506%3A1387&mode=design&t=m8Rh6M8JzcjbSDrf-1",
+    "description": "다양한 축제 정보를 효과적으로 제공하여 사용자가 쉽고 빠르게 흥미로운 축제를 찾아 새로운 경험을 할 수 있도록 도와주는 웹 사이트",
+    "skills": [
+      "React",
+      "Typescript",
+      "Zustand",
+      "React Query",
+      "Styled Components"
+    ],
+    "path": "ticat",
+    "isTeam": true
+  },
+  {
+    "name": "매주매주",
+    "image": "mejumeju-preview.gif",
+    "url": "http://meju-meju.s3-website.ap-northeast-2.amazonaws.com",
+    "github": "https://github.com/codestates-seb/seb43_main_006",
+    "description": "여러 주류에 대한 정보를 제공하고, 내 위치에서 가까운 매장을 보여주고, 사용자가 원하는 매장에서 픽업을 할 수 있는 웹 쇼핑몰 사이트",
+    "skills": ["React", "Typescript", "Redux Toolkit", "Styled Components"],
+    "path": "mejumeju",
+    "isTeam": true
+  },
+  {
+    "name": "VBlog",
+    "image": "vblog-preview.png",
+    "github": "https://github.com/dmu-most/vblog-client",
+    "description": "블로그/브이로그들을 추천 알고리즘으로 다양한 추천과 리뷰를 제공하는 웹 사이트",
+    "skills": ["React", "Typescript", "Zustand", "Styled Components"],
+    "path": "vblog",
+    "isTeam": true
+  }
+]
