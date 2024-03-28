@@ -14,7 +14,7 @@ export default async function ProjectPage({ params: { slug } }: Props) {
     <article
       style={{
         margin: '130px 0',
-        padding: '0 2rem',
+        padding: '0 20px',
       }}
     >
       <Content project={project} />
