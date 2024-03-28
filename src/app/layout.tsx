@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { Noto_Sans_KR } from 'next/font/google';
+import { IBM_Plex_Sans_KR } from 'next/font/google';
 
-import '../styles/reset.css';
+import '../styles/global.css';
 
 import Header from '@/sections/header';
 
-const notoKr = Noto_Sans_KR({
+const IbmPlexKr = IBM_Plex_Sans_KR({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600'],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={notoKr.className}>
+      <body className={IbmPlexKr.className}>
         <Header />
         <main>{children}</main>
       </body>
