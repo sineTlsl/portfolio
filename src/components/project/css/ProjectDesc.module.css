@@ -1,0 +1,153 @@
+.no-global-styles div,
+.no-global-styles span,
+.no-global-styles applet,
+.no-global-styles object,
+.no-global-styles iframe,
+.no-global-styles h1,
+.no-global-styles h2,
+.no-global-styles h3,
+.no-global-styles h4,
+.no-global-styles h5,
+.no-global-styles h6,
+.no-global-styles p,
+.no-global-styles blockquote,
+.no-global-styles pre,
+.no-global-styles a,
+.no-global-styles abbr,
+.no-global-styles acronym,
+.no-global-styles address,
+.no-global-styles big,
+.no-global-styles cite,
+.no-global-styles code,
+.no-global-styles del,
+.no-global-styles dfn,
+.no-global-styles em,
+.no-global-styles img,
+.no-global-styles ins,
+.no-global-styles kbd,
+.no-global-styles q,
+.no-global-styles s,
+.no-global-styles samp,
+.no-global-styles small,
+.no-global-styles strike,
+.no-global-styles strong,
+.no-global-styles sub,
+.no-global-styles sup,
+.no-global-styles tt,
+.no-global-styles var,
+.no-global-styles b,
+.no-global-styles u,
+.no-global-styles i,
+.no-global-styles center,
+.no-global-styles dl,
+.no-global-styles dt,
+.no-global-styles dd,
+.no-global-styles ol,
+.no-global-styles ul,
+.no-global-styles li,
+.no-global-styles fieldset,
+.no-global-styles form,
+.no-global-styles label,
+.no-global-styles legend,
+.no-global-styles table,
+.no-global-styles caption,
+.no-global-styles tbody,
+.no-global-styles tfoot,
+.no-global-styles thead,
+.no-global-styles tr,
+.no-global-styles th,
+.no-global-styles td,
+.no-global-styles article,
+.no-global-styles aside,
+.no-global-styles canvas,
+.no-global-styles details,
+.no-global-styles embed,
+.no-global-styles figure,
+.no-global-styles figcaption,
+.no-global-styles footer,
+.no-global-styles header,
+.no-global-styles hgroup,
+.no-global-styles menu,
+.no-global-styles nav,
+.no-global-styles output,
+.no-global-styles ruby,
+.no-global-styles section,
+.no-global-styles summary,
+.no-global-styles time,
+.no-global-styles mark,
+.no-global-styles audio,
+.no-global-styles video {
+  margin: revert;
+  padding: revert;
+  border: revert;
+  font-size: revert;
+  font: revert;
+  vertical-align: revert;
+}
+
+.no-global-styles article,
+.no-global-styles aside,
+.no-global-styles details,
+.no-global-styles figcaption,
+.no-global-styles figure,
+.no-global-styles footer,
+.no-global-styles header,
+.no-global-styles hgroup,
+.no-global-styles menu,
+.no-global-styles nav,
+.no-global-styles section {
+  display: revert;
+}
+
+.no-global-styles ol,
+.no-global-styles ul {
+  list-style: revert;
+}
+
+.no-global-styles blockquote,
+.no-global-styles q {
+  quotes: revert;
+}
+
+.no-global-styles blockquote:before,
+.no-global-styles blockquote:after,
+.no-global-styles q:before,
+.no-global-styles q:after {
+  content: revert;
+}
+
+.no-global-styles table {
+  border-collapse: revert;
+  border-spacing: revert;
+}
+
+.no-global-styles h2,
+.no-global-styles h3 {
+  padding-top: 1rem;
+}
+
+.no-global-styles a {
+  color: #000;
+}
+
+.no-global-styles a:hover {
+  color: #555;
+}
+
+.no-global-styles ul,
+.no-global-styles ol {
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.no-global-styles blockquote {
+  line-height: 1.5rem;
+  border-left: 4px solid #111827;
+  padding-left: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.no-global-styles p {
+  line-height: 1.5rem;
+}
