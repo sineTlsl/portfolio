@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
+  color: #000;
 }
 .card-text > .flex-space {
   display: flex;
@@ -21,5 +22,4 @@
   line-height: 1.3rem;
   font-weight: 400;
   font-size: 15px;
-  color: #222;
 }

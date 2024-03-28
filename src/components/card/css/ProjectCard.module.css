@@ -1,5 +1,6 @@
 .card-wrap {
   width: 350px;
+  min-height: 456px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
