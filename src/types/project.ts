@@ -1,7 +1,15 @@
 export type Project = {
   name: string;
   image: string;
+  github: string;
+  figma?: string;
+  url?: string;
   description: string;
-  isTeam: boolean;
   skills: string[];
+  path: string;
+  isTeam: boolean;
+};
+
+export type ProjectData = Project & {
+  content: string;
 };
