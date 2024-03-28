@@ -1,18 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import styles from './css/Profile.module.css';
 
 export default function Profile() {
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '210px',
-        height: '210px',
-        borderRadius: '50%',
-        overflow: 'hidden',
-      }}
-    >
+    <div className={styles['profile-wrap']}>
       <Image
         src="/assets/images/profile.jpeg"
         fill

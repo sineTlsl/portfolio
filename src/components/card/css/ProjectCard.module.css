@@ -10,6 +10,12 @@
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+  .card-wrap {
+    width: 100%;
+  }
+}
+
 .card-wrap:hover {
   transform: scale(1.05);
 }

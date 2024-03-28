@@ -1,12 +1,10 @@
 import LayoutContainer from '@/components/LayoutContainer';
-import SubText from './SubText';
-import SkillContent from './SkillContent';
+import SkillContainer from './SkillContainer';
 
 export default function Skill() {
   return (
-    <LayoutContainer gap="7.5rem" flexDirection="row" padding="5.5rem 0">
-      <SubText />
-      <SkillContent />
+    <LayoutContainer padding="5.5rem 0">
+      <SkillContainer />
     </LayoutContainer>
   );
 }

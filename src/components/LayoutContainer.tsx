@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import FadeInAnimation from './scroll/FadeInAnimation';
+import styles from './LayoutContainer.module.css';
 
 type flexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse';
 type Props = {
@@ -25,13 +26,10 @@ export default function LayoutContainer({
 }: Props) {
   const content = (
     <section
+      className={styles.container}
       style={{
-        width: '100%',
         height: height,
-        display: 'flex',
         flexDirection: flexDirection,
-        justifyContent: 'center',
-        alignItems: 'center',
         background: background,
         gap: gap,
         padding: padding,
