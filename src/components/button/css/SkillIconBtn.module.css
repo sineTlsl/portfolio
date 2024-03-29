@@ -1,0 +1,17 @@
+.skill-icon {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .skill-icon {
+    max-width: 45px;
+    padding: 0 10px;
+  }
+}

@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .rainbow-wrap {
     left: 10rem;
     padding-bottom: 18rem;

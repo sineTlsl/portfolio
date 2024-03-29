@@ -1,19 +1,11 @@
 import Link from 'next/link';
+import styles from './css/LogoText.module.css';
 
 export default function LogoText() {
   return (
     <>
-      <Link
-        href='/'
-        style={{
-          textDecoration: 'none',
-          textTransform: 'uppercase',
-          color: '#000',
-          fontWeight: '600',
-          fontSize: '18px',
-        }}
-      >
-        <span style={{ marginRight: '8px' }}>{`Sieun's`}</span>Portfolio
+      <Link href="/" className={styles['logo-link']}>
+        {`Sieun's Portfolio`}
       </Link>
     </>
   );

@@ -20,9 +20,5 @@ const responsive = {
 };
 
 export default function MultiCarousel({ children }: { children: ReactNode }) {
-  return (
-    <Carousel infinite autoPlay responsive={responsive}>
-      {children}
-    </Carousel>
-  );
+  return <Carousel responsive={responsive}>{children}</Carousel>;
 }

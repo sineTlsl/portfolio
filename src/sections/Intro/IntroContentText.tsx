@@ -1,8 +1,8 @@
 'use client';
 
+import Connect from './Connect';
 import IntroTitleText from './IntroTitleText';
 import Profile from './Profile';
-import Connect from './Connect';
 import RainbowImage from './RainbowImage';
 import styles from './css/IntroContentText.module.css';
 

@@ -23,3 +23,15 @@
   font-weight: 400;
   font-size: 15px;
 }
+
+@media screen and (max-width: 767px) {
+  .card-text > .flex-space > .name {
+    font-size: 18px;
+  }
+  .card-text > .flex-space > .team {
+    font-size: 12px;
+  }
+  .card-text > .desc {
+    font-size: 13px;
+  }
+}

@@ -1,5 +1,5 @@
-import Intro from '@/sections/Intro';
-import Project from '@/sections/Project';
+import Project from '@/sections/project';
+import Intro from '@/sections/intro';
 import Skill from '@/sections/skill';
 
 export default function Home() {

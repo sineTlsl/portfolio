@@ -131,17 +131,14 @@
 .no-global-styles a {
   color: #000;
 }
-
 .no-global-styles a:hover {
   color: #555;
 }
-
 .no-global-styles ul,
 .no-global-styles ol {
   line-height: 1.7rem;
   margin-bottom: 2rem;
 }
-
 .no-global-styles blockquote {
   line-height: 1.5rem;
   border-left: 4px solid #111827;
@@ -149,7 +146,27 @@
   font-weight: 500;
   font-style: italic;
 }
-
 .no-global-styles p {
   line-height: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .no-global-styles h2 {
+    font-size: 20px;
+  }
+  .no-global-styles h3 {
+    font-size: 16px;
+  }
+  .no-global-styles p,
+  .no-global-styles ul,
+  .no-global-styles ol {
+    font-size: 14px;
+  }
+  .no-global-styles ul,
+  .no-global-styles ol {
+    line-height: 1.5rem;
+  }
+  .no-global-styles p {
+    line-height: 1.3rem;
+  }
 }

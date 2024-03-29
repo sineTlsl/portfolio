@@ -1,20 +1,10 @@
 import Image from 'next/image';
 import { SkillIcon } from '@/types/icon';
+import styles from './css/SkillIconBtn.module.css';
 
 export default function SkillIconBtn({ name, icon }: SkillIcon) {
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '65px',
-        height: '65px',
-        borderRadius: '8px',
-        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
+    <div className={styles['skill-icon']}>
       <Image
         src={`/assets/images/skill/${icon}`}
         width={45}

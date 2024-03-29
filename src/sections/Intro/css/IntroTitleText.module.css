@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 767px) {
   .intro-text {
-    font-size: 30px;
+    font-size: 28px;
   }
   .intro-text > ul > li {
     line-height: 2.5rem;

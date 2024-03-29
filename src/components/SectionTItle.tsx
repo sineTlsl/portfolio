@@ -1,3 +1,5 @@
+import styles from './SectionTitle.module.css';
+
 type Props = {
   title: string;
   marginBottom?: string;
@@ -6,11 +8,9 @@ type Props = {
 export default function SectionTitle({ title, marginBottom = '4rem' }: Props) {
   return (
     <h2
+      className={styles['title-style']}
       style={{
-        fontSize: '30px',
-        fontWeight: '600',
         marginBottom: marginBottom,
-        textTransform: 'uppercase',
       }}
     >
       {title}

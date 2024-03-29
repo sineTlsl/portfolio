@@ -23,9 +23,13 @@
   gap: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .content-wrap {
     max-width: 100%;
     padding: 0 20px;
+  }
+  .header-h1 {
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
