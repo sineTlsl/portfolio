@@ -1,0 +1,31 @@
+.content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content-wrap .flex-row {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+}
+
+.content-wrap .flex-row .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-wrap .flex-row {
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-wrap .flex-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,11 @@
+.project-sub-text {
+  margin-bottom: 3rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  .project-sub-text {
+    font-size: 12px;
+  }
+}
