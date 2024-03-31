@@ -4,6 +4,7 @@ import { IBM_Plex_Sans_KR } from 'next/font/google';
 import '../styles/global.css';
 
 import Header from '@/sections/header';
+import Footer from '@/sections/footer';
 
 const IbmPlexKr = IBM_Plex_Sans_KR({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={IbmPlexKr.className}>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
