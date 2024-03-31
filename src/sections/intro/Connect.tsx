@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import ConnectIconBtn from '@/components/button/ConnectIconBtn';
 import Snackbar from '@mui/material/Snackbar';
-import { connectIcon } from './ConnectIcon';
+import ConnectIconBtn from '@/components/button/ConnectIconBtn';
 import ToolTipIcon from '@/components/icon/ToolTipIcon';
+import { CONNECT } from '@/constants/connect';
 
 type Success = {
   open: boolean;
@@ -34,7 +34,7 @@ export default function Connect() {
 
   return (
     <div style={{ display: 'flex', gap: '1rem' }}>
-      {connectIcon.map(({ nameKr, icon, name, href, copyText }) => (
+      {CONNECT.map(({ nameKr, icon, name, href, copyText }) => (
         <ToolTipIcon key={name} name={nameKr}>
           <ConnectIconBtn
             nameKr={nameKr}
