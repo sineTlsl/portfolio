@@ -1,0 +1,30 @@
+.study-list-wrap {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.hr-wrap {
+  margin-bottom: 4.5rem;
+}
+.hr {
+  width: 100%;
+  border-top: 3px solid rgb(234, 234, 234);
+}
+
+.study-list-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .hr-wrap {
+    margin-bottom: 39px;
+    padding: 0 20px;
+  }
+  .study-list-ul {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+}

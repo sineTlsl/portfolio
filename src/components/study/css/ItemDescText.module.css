@@ -1,0 +1,31 @@
+.item-desc-text {
+  line-height: 1.5rem;
+}
+
+/* 원 */
+.circle {
+  position: relative;
+  padding-left: 20px;
+  height: 20px;
+}
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .item-desc-text {
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+  .item-desc-text > li {
+    margin-bottom: 8px;
+  }
+}

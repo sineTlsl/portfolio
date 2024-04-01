@@ -1,0 +1,32 @@
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 655px;
+}
+.item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.7rem;
+}
+.item-date {
+  font-size: 16px;
+  color: #969696;
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 767px) {
+  .item-desc {
+    padding: 10px 20px;
+    gap: 0.3rem;
+    width: 100%;
+  }
+  .item-title {
+    font-size: 18px;
+    line-height: 1.4rem;
+  }
+  .item-date {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+}
