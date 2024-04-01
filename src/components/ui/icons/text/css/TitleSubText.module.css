@@ -1,0 +1,10 @@
+.title-sub-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  .title-sub-text {
+    font-size: 12px;
+  }
+}
