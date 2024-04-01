@@ -3,7 +3,7 @@ import SkillContainer from './SkillContainer';
 
 export default function Skill() {
   return (
-    <LayoutContainer padding="5.5rem 0">
+    <LayoutContainer padding="6.2rem 0">
       <SkillContainer />
     </LayoutContainer>
   );
