@@ -28,11 +28,11 @@ export default function LayoutContainer({
     <section
       className={styles.container}
       style={{
-        height: height,
-        flexDirection: flexDirection,
-        background: background,
-        gap: gap,
-        padding: padding,
+        height,
+        flexDirection,
+        background,
+        gap,
+        padding,
       }}
     >
       {children}

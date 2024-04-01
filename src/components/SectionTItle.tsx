@@ -10,7 +10,7 @@ export default function SectionTitle({ title, marginBottom = '4rem' }: Props) {
     <h2
       className={styles['title-style']}
       style={{
-        marginBottom: marginBottom,
+        marginBottom,
       }}
     >
       {title}
