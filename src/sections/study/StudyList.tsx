@@ -7,9 +7,6 @@ export default async function StudyList() {
 
   return (
     <div className={styles['study-list-wrap']}>
-      <div className={styles['hr-wrap']}>
-        <p className={styles.hr} />
-      </div>
       <ul className={styles['study-list-ul']}>
         {studys.map((study, idx) => (
           <StudyItem key={idx} study={study} />

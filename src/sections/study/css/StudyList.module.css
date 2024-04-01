@@ -3,14 +3,6 @@
   max-width: 1000px;
 }
 
-.hr-wrap {
-  margin-bottom: 4.5rem;
-}
-.hr {
-  width: 100%;
-  border-top: 3px solid rgb(234, 234, 234);
-}
-
 .study-list-ul {
   display: flex;
   flex-direction: column;
