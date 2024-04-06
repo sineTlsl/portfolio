@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: 'sieun-portfolio.s3.ap-northeast-2.amazonaws.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.youtube.com',
+        pathname: '/**',
+      },
     ],
   },
 };
