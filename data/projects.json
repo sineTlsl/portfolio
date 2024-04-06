@@ -27,11 +27,20 @@
   },
   {
     "name": "VBlog",
-    "image": "vblog-preview.png",
+    "image": "vblog-preview.gif",
     "github": "https://github.com/dmu-most/vblog-client",
     "description": "블로그/브이로그들을 추천 알고리즘으로 다양한 추천과 리뷰를 제공하는 웹 사이트",
     "skills": ["React", "Typescript", "Zustand", "Styled Components"],
     "path": "vblog",
     "isTeam": true
+  },
+  {
+    "name": "Portfolio",
+    "image": "portfolio-preview.png",
+    "github": "https://github.com/sineTlsl/portfolio",
+    "description": "개인 포트폴리오 사이트",
+    "skills": ["Nextjs", "Typescript", "CSS Modules"],
+    "path": "portfolio",
+    "isTeam": false
   }
 ]

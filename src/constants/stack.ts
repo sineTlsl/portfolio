@@ -32,4 +32,8 @@ export const TEACHSTACK: TechStack[] = [
     icon: 'Redux Toolkit',
     image: 'redux-toolkit.webp',
   },
+  {
+    icon: 'CSS Modules',
+    image: 'css-modules.webp',
+  },
 ];
