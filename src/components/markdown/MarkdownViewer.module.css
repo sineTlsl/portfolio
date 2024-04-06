@@ -76,15 +76,7 @@
 .no-global-styles time,
 .no-global-styles mark,
 .no-global-styles audio,
-.no-global-styles video {
-  margin: revert;
-  padding: revert;
-  border: revert;
-  font-size: revert;
-  font: revert;
-  vertical-align: revert;
-}
-
+.no-global-styles video,
 .no-global-styles article,
 .no-global-styles aside,
 .no-global-styles details,
@@ -95,30 +87,17 @@
 .no-global-styles hgroup,
 .no-global-styles menu,
 .no-global-styles nav,
-.no-global-styles section {
-  display: revert;
-}
-
+.no-global-styles section,
 .no-global-styles ol,
-.no-global-styles ul {
-  list-style: revert;
-}
-
+.no-global-styles ul,
 .no-global-styles blockquote,
-.no-global-styles q {
-  quotes: revert;
-}
-
+.no-global-styles q,
 .no-global-styles blockquote:before,
 .no-global-styles blockquote:after,
 .no-global-styles q:before,
-.no-global-styles q:after {
-  content: revert;
-}
-
+.no-global-styles q:after,
 .no-global-styles table {
-  border-collapse: revert;
-  border-spacing: revert;
+  all: revert;
 }
 
 .no-global-styles h2,
@@ -128,16 +107,22 @@
 .no-global-styles h3 {
   line-height: 1.5rem;
 }
+.no-global-styles code {
+  border-radius: 4px;
+  padding: 3px 5px;
+  background: #e6e6e6;
+}
 .no-global-styles a {
-  color: #000;
+  text-decoration: none;
+  padding: 0 3px 3px 3px;
+  color: #3e3e3e;
 }
 .no-global-styles a:hover {
-  color: #555;
+  border-bottom: 3px solid #e7e7e7;
 }
 .no-global-styles ul,
 .no-global-styles ol {
   line-height: 1.7rem;
-  margin-bottom: 2rem;
 }
 .no-global-styles blockquote {
   line-height: 1.5rem;

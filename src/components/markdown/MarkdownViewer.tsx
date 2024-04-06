@@ -5,20 +5,26 @@ import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import styles from './MarkdownViewer.module.css';
 import { isGif } from '@/utils/image';
+import Link from 'next/link';
 
 type Props = {
   content: string;
 };
 
 export default function MarkdownViewer({ content }: Props) {
-  useEffect(() => {});
-
   return (
     <Markdown
+      className={styles['no-global-styles']}
       remarkPlugins={[remarkGfm]}
       components={{
+        a: (href) =>
+          href.href && (
+            <Link href={href.href} target="_blank">
+              {href.children}
+            </Link>
+          ),
         code(props) {
           const { ref, children, className, node, ...rest } = props;
           const match = /language-(\w+)/.exec(className || '');
@@ -38,6 +44,7 @@ export default function MarkdownViewer({ content }: Props) {
             </code>
           );
         },
+
         img: (image) => (
           <Image
             src={image.src || ''}

@@ -34,7 +34,7 @@ export default function Header() {
     <header>
       <ScrollYProgressBar />
       <div
-        className={`${styles['my-header']} ${inter.className} ${
+        className={`${styles['my-header']} ${
           isHeaderActive ? `${styles.active}` : ''
         }`}
       >

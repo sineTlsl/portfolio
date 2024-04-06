@@ -1,11 +1,9 @@
-import MarkdownViewer from '@/components/project/MarkdownViewer';
+import MarkdownViewer from '@/components/markdown/MarkdownViewer';
 import { ProjectData } from '@/types/project';
-import styles from './css/ProjectDesc.module.css';
 
 export default function ProjectDesc({ project }: { project: ProjectData }) {
   return (
     <section
-      className={styles['no-global-styles']}
       style={{
         height: '100%',
         width: '100%',

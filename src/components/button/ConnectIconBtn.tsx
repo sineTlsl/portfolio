@@ -8,7 +8,13 @@ type Props = ConnectIcon & {
 export default function ConnectIconBtn({ name, icon, href, onClick }: Props) {
   return (
     <button onClick={onClick} aria-label={`${name}`}>
-      {href ? <Link href={href}>{icon}</Link> : <>{icon}</>}
+      {href ? (
+        <Link href={href} target="_blank">
+          {icon}
+        </Link>
+      ) : (
+        <>{icon}</>
+      )}
     </button>
   );
 }

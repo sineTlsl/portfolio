@@ -17,7 +17,7 @@ export default function SkillTags({ skills }: Props) {
     <div className={styles.skill}>
       {skills.map((skill: string) => (
         <div key={skill} className={styles['skill-tag']}>
-          <Image src={findSkillImg(skill)} height={20} width={20} alt={skill} />
+          <Image src={findSkillImg(skill)} height={15} width={15} alt={skill} />
           {skill}
         </div>
       ))}

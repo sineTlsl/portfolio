@@ -1,8 +1,8 @@
 .card-text {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  color: #000;
+  padding: 1.3rem;
+  color: #3e3e3e;
 }
 .card-text > .flex-space {
   display: flex;
@@ -11,7 +11,7 @@
   margin-bottom: 1rem;
 }
 .card-text > .flex-space > .name {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
 }
 .card-text > .flex-space > .team {

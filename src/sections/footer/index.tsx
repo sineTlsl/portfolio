@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles['connent-icon']}>
         {DEFAULT_CONNENT.map(({ name, icon, href }) => (
-          <Link key={name} href={href}>
+          <Link key={name} href={href} target="_blank">
             {icon}
           </Link>
         ))}

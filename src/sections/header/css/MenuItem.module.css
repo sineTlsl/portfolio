@@ -5,7 +5,7 @@
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   transition: color 0.3s;
-  color: #000;
+  color: #3e3e3e;
   font-size: 14px;
   font-weight: 400;
   position: relative;
@@ -29,18 +29,18 @@
 }
 .item a:hover:before,
 .item a:focus:before {
-  color: #000;
+  color: #3e3e3e;
   text-shadow: 10px 0 #000, -10px 0 #000;
 }
 .item a:hover,
 .item a:focus {
-  color: #000;
+  color: #3e3e3e;
 }
 
 .link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #3e3e3e;
   font-weight: 600;
   font-size: 20px;
 }
