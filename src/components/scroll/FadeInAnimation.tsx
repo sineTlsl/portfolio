@@ -1,7 +1,8 @@
 'use client';
 
-import { ReactNode, useEffect, useRef, useState } from 'react';
+import { ReactNode } from 'react';
 import styles from './css/FadeInAnimation.module.css';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 type Props = {
   name?: string;
@@ -9,33 +10,12 @@ type Props = {
 };
 
 export default function FadeInAnimation({ name, children }: Props) {
-  const [isVisible, setIsVisible] = useState(false);
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const currentTarget = scrollRef.current;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => setIsVisible(entry.isIntersecting));
-      },
-      { threshold: 0.2 }
-    );
-
-    if (currentTarget) {
-      observer.observe(currentTarget);
-    }
-
-    return () => {
-      if (currentTarget) {
-        observer.unobserve(currentTarget);
-      }
-    };
-  }, []);
+  const { isVisible, animationRef } = useScrollAnimation<HTMLDivElement>();
 
   return (
     <div
       id={name}
-      ref={scrollRef}
+      ref={animationRef}
       className={`${styles['fade-wrap']} ${isVisible && styles['fade-in']}`}
     >
       {children}
