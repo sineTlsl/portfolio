@@ -9,11 +9,25 @@
   line-height: 2rem;
   font-weight: 400;
 }
-
 .bold {
   font-size: 22px;
   font-weight: 700;
-  box-shadow: inset 0 -14px 0 #f0e277;
+}
+.highlight {
+  background: linear-gradient(#f0e277 0 100%);
+  background-position: 0 calc(100% - 2px);
+  background-size: 0 14px;
+  background-repeat: no-repeat;
+  animation: highlightAnimation 1s forwards;
+  animation-delay: 0.5s;
+}
+@keyframes highlightAnimation {
+  from {
+    background-size: 0 14px;
+  }
+  to {
+    background-size: 100% 14px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -23,7 +37,7 @@
   .text {
     font-size: 18px;
   }
-  .bold {
+  .highlight {
     font-size: 20px;
   }
 }
@@ -36,7 +50,7 @@
     font-size: 16px;
     line-height: 1.8rem;
   }
-  .bold {
+  .highlight {
     font-size: 18px;
   }
 }
