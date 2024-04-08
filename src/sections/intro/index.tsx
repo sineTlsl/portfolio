@@ -7,8 +7,8 @@ export default function Intro() {
     <LayoutContainer
       name="about"
       isFade={false}
-      background="#eaeaea"
       height="100vh"
+      background="var(--bg-100)"
     >
       <IntroContentText />
       <ScrollDown />

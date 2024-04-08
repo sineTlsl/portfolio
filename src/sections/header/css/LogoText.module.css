@@ -1,7 +1,7 @@
 .logo-link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #3e3e3e;
+  color: var(--primary-300);
   font-weight: 600;
   font-size: 18px;
 }

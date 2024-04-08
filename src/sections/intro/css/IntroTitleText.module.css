@@ -2,7 +2,7 @@
   font-size: 50px;
 }
 .intro-text > ul > li {
-  color: #3e3e3e;
+  color: var(--primary-300);
   line-height: 4rem;
 }
 

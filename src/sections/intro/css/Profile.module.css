@@ -1,8 +1,9 @@
 .profile-wrap {
   position: relative;
-  width: 210px;
-  height: 210px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
+  border: 2.5px solid var(--primary-300);
   overflow: hidden;
 }
 
