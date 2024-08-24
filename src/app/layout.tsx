@@ -31,7 +31,7 @@ const pretendard = localFont({
 });
 export const metadata: Metadata = {
   title: '임시은 포트폴리오',
-  description: '프론트엔드 신입 개발자 임시은입니다.',
+  description: '프론트엔드 개발자 임시은입니다.',
   openGraph: {
     images: ['https://www.sieun-lim-portfolio.com/assets/images/profile.jpeg'],
   },
