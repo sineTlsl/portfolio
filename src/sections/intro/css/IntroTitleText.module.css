@@ -1,25 +1,36 @@
 .intro-text {
-  font-size: 50px;
+  font-size: 3.5rem;
 }
 .intro-text > ul > li {
   color: var(--primary-300);
-  line-height: 4rem;
+  margin: 1.2rem;
 }
 
 .bold {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1439px) {
+  .intro-text {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .intro-text {
+    font-size: 2.5rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .intro-text {
-    font-size: 40px;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 767px) {
   .intro-text {
-    font-size: 28px;
+    font-size: 1.5rem;
   }
   .intro-text > ul > li {
+    margin: 0;
     line-height: 2.5rem;
   }
 }

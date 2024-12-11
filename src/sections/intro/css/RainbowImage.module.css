@@ -1,7 +1,7 @@
 .rainbow-wrap {
-  padding-bottom: 13rem;
+  padding-bottom: 16rem;
   position: absolute;
-  left: 17rem;
+  left: 20rem;
 }
 
 .rainbow-wrap .rainbow {
@@ -16,7 +16,24 @@
     transform: rotate(10deg); /* 오른쪽으로 20도 기울임 */
   }
 }
-
+@media screen and (max-width: 1439px) {
+  .rainbow-wrap {
+    left: 17rem;
+    padding-bottom: 13rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .rainbow-wrap {
+    left: 14rem;
+    padding-bottom: 11rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .rainbow-wrap {
+    left: 10rem;
+    padding-bottom: 11rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .rainbow-wrap {
     left: 10rem;
